@@ -1,0 +1,37 @@
+{
+  "echonet-memory-stage1": {
+    "dataset": "echonet", "memory": true, "epoch": 52, "selection": "validation Dice",
+    "sha256": "4eb54492eebe5198b82fec8ced2c1cf2c514c3cc63c6deea91233fa63b09ed49",
+    "reference": {"videos": 1275, "dice_percent": 92.72, "lvef_mae_pp": 6.29}
+  },
+  "echonet-memory-stage2-lvef": {
+    "dataset": "echonet", "memory": true, "epoch": 188, "selection": "validation LVEF MAE with Dice >= 0.92",
+    "sha256": "b2199a4c0dd946cf9cbb50424dcde012115db7129586efef83d415c02a52f79a",
+    "reference": {"videos": 1275, "dice_percent": 92.75, "lvef_mae_pp": 4.65}
+  },
+  "echonet-memory-stage2-dice": {
+    "dataset": "echonet", "memory": true, "epoch": 53, "selection": "validation Dice",
+    "sha256": "9b30d13526ae42b77807b280f441451e99de189426608da6ad663ed149e95692",
+    "reference": {"videos": 1275, "dice_percent": 92.84, "lvef_mae_pp": 4.84}
+  },
+  "echonet-memory-free-stage1": {
+    "dataset": "echonet", "memory": false, "epoch": 44, "selection": "validation Dice",
+    "sha256": "b6133bbf60431157a5d5abfb9c637172ca36bf53aadd58deb63e0867068c9006",
+    "reference": {"videos": 1275, "dice_percent": 92.63, "lvef_mae_pp": 6.65}
+  },
+  "echonet-memory-free-stage2": {
+    "dataset": "echonet", "memory": false, "epoch": 17, "selection": "validation LVEF MAE with Dice >= 0.92",
+    "sha256": "011e0f6715aaafab42d464a15895bfaffeb977a3632f5ea68c5c42b62cbe8068",
+    "reference": {"videos": 1275, "dice_percent": 92.59, "lvef_mae_pp": 6.27}
+  },
+  "camus": {
+    "dataset": "camus", "memory": true,
+    "sha256": "f2d76a02b396c9b707f91359ac4a95991d37a3a417c121abb31c90a5b6682743",
+    "reference": {"videos": 100, "patients": 50, "dice_percent": 91.97}
+  },
+  "private-a4c": {
+    "dataset": "private-a4c", "memory": true,
+    "sha256": "914bf313aed0908db2240ff56fe5e4a6c84b56256d6a431e988cce98f87f5088",
+    "reference": {"videos": 80, "dice_percent": 92.54}
+  }
+}
